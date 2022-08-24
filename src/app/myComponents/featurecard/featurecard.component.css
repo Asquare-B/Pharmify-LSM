@@ -1,0 +1,31 @@
+.con1{
+    padding: 10px;
+    width: 350px;
+}
+
+.card{
+    border: 1px;
+    border-radius: 20px;
+    border-style: dotted;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    width: 80%;
+}
+
+.header i{
+    font-size: 35px;
+    margin: 10px 0px;
+    padding-right:20px;
+    color: #00ffa2b2;
+}

@@ -1,0 +1,22 @@
+<div class="con1">
+    <div class="navbar">
+        <div class="left">
+            <div id="name">
+                Pharmify
+            </div>
+            <div class="navitems">
+                    <a routerLink="/home">Home</a>
+                    <a routerLink="/shopcat">Shop</a>
+                    <a routerLink="/aboutus">About us</a>
+                    <a routerLink="/contactus">Contact us</a>
+            </div>
+        </div>
+        <div class="right">
+            <app-searchbar></app-searchbar>
+            <a *ngIf="!islogged"  (click)="signin()">LOGIN</a>
+            <a *ngIf="islogged">{{x}}</a>
+            <a *ngIf="islogged"  (click)="signout()">SIGNOUT</a>
+            <a routerLink="/cart"><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+    </div>
+</div>

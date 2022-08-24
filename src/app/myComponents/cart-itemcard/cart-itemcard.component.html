@@ -1,0 +1,15 @@
+<div class="con1" >
+    <div class="card" *ngFor="let item of mydict;let i=index">
+        <div class="image">
+            <img [src]="item.photo" height="100px">
+        </div>
+        <div class="details">
+            <p id="name">{{item.name}}</p>
+            <p id="quan">Quan: {{item.quantity}}</p>
+            <p id="price">Price of 1 QTY: {{item.price}}</p>
+        </div>
+        <div class="buttons" (click)="mydelete(item.id,item.uid)">
+            <i class="fa-solid fa-trash-can"></i>
+        </div>
+    </div>
+</div>
